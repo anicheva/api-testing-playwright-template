@@ -82,7 +82,7 @@ test('post product only with mandatory data should receive code 201', async ({ r
   expect(statusCode).toBe(StatusCodes.CREATED)
   // check that body.name is string type
   expect(typeof responseBody.name).toBe('string')
-  expect(responseBody.name).toBe("Orange")
+  expect(responseBody.name).toBe('Orange')
   // check that body.price is number type
   expect(typeof responseBody.price).toBe('number')
 })
